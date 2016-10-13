@@ -45,7 +45,7 @@ const quotes =
 ];
 
 
-server.create(app => {
+server.create({port : 8080, host : '0.0.0.0'},  app => {
  
     
     app.get('/', (req, res) => {
