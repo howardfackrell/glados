@@ -46,8 +46,7 @@ const quotes =
 
 
 server.create({port : 8080, host : '0.0.0.0'},  app => {
- 
-    
+     
     app.get('/', (req, res) => {
     	var quote = quotes[Math.floor(Math.random() * quotes.length)];
       res.send(quote);
